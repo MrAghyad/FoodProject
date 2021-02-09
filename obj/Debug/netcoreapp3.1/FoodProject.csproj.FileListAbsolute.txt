@@ -109,3 +109,7 @@
 /home/aghyad/dotnetprjects/FoodProject/obj/Debug/netcoreapp3.1/FoodProject.pdb
 /home/aghyad/dotnetprjects/FoodProject/obj/Debug/netcoreapp3.1/FoodProject.genruntimeconfig.cache
 /home/aghyad/dotnetprjects/FoodProject/obj/Debug/netcoreapp3.1/Razor/Pages/Restaurants/List.cshtml.g.cs
+/home/aghyad/dotnetprjects/FoodProject/bin/Debug/netcoreapp3.1/FoodProject.Core/obj/FoodProject.Core.csproj.nuget.dgspec.json
+/home/aghyad/dotnetprjects/FoodProject/bin/Debug/netcoreapp3.1/FoodProject.Core/obj/project.assets.json
+/home/aghyad/dotnetprjects/FoodProject/bin/Debug/netcoreapp3.1/FoodProject.Data/obj/FoodProject.Data.csproj.nuget.dgspec.json
+/home/aghyad/dotnetprjects/FoodProject/bin/Debug/netcoreapp3.1/FoodProject.Data/obj/project.assets.json
