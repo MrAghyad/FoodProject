@@ -1,12 +1,12 @@
 using System.Collections.Generic;
-using FoodProject.Core;
 using System.Linq;
+using FoodProject.Core;
 
 namespace FoodProject.Data
 {
     public interface IRestaurantData 
     {
-        public IEnumerable<Restaurant> GetAll();
+        IEnumerable<Restaurant> GetAll();
     }
 
     public class InMemoryRestaurantData : IRestaurantData
