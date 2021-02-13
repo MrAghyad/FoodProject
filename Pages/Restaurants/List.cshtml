@@ -31,6 +31,11 @@
                 asp-page="./Detail" asp-route-restaurantId="@restaurant.Id">
                     <i class="bi bi-folder-fill"></i>
                 </a>
+
+                <a class="btn btn-lg"
+                asp-page="./Edit" asp-route-restaurantId="@restaurant.Id">
+                    <i class="bi bi-pencil-square"></i>
+                </a>
             </td>
         </tr>
     }
