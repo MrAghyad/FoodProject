@@ -14,7 +14,7 @@ namespace FoodProject.Pages.Restaurants
     {
         private readonly IRestaurantData restaurantData;
         private readonly IHtmlHelper htmlHelper;
-
+        [BindProperty]
         public Restaurant Restaurant { get; set; }
         public IEnumerable<SelectListItem> Cuisines { get; set; }
         public EditModel(IRestaurantData restaurantData, IHtmlHelper htmlHelper)
@@ -26,7 +26,7 @@ namespace FoodProject.Pages.Restaurants
         public IActionResult OnGet(int restaurantId)
         {
             Cuisines = htmlHelper.GetEnumSelectList<CuisineType>();
-            
+
             Restaurant = restaurantData.GetRestaurantById(restaurantId);
 
             if(Restaurant == null)
@@ -34,6 +34,18 @@ namespace FoodProject.Pages.Restaurants
                 return RedirectToPage("./NotFound");
             }
 
+            return Page();
+        }
+
+        public IActionResult OnPost()
+        {
+            if(ModelState.IsValid)
+            {
+                Restaurant = restaurantData.Update(Restaurant);
+                restaurantData.Commit();
+            }
+            Cuisines = htmlHelper.GetEnumSelectList<CuisineType>();
+            
             return Page();
         }
     }
