@@ -30,7 +30,7 @@ namespace FoodProject
                 options.UseNpgsql(Configuration.GetConnectionString("FoodProjectDb"));
             });
 
-            services.AddSingleton<IRestaurantData, InMemoryRestaurantData>();
+            services.AddScoped<IRestaurantData, PostgresqlRestaurantData>();
             services.AddRazorPages();
         }
 

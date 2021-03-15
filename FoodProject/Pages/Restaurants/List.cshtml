@@ -36,6 +36,11 @@
                 asp-page="./Edit" asp-route-restaurantId="@restaurant.Id">
                     <i class="bi bi-pencil-square"></i>
                 </a>
+
+                <a class="btn btn-lg"
+                asp-page="./Delete" asp-route-restaurantId="@restaurant.Id">
+                    <i class="bi bi-trash"></i>
+                </a>
             </td>
         </tr>
     }
@@ -43,4 +48,6 @@
 
 <a class="btn btn-primary" asp-page="./Edit">Add New</a>
 
-<div> @Model.Message </div>
+@section footer{
+    <div> @Model.Message </div>
+}
