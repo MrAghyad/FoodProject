@@ -40,13 +40,14 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    
+    <div class="container">
+        <footer></footer>
         <vc:restaurant-count></vc:restaurant-count>
         @RenderSection("footer", required: false)
-        <div class="container">
-            &copy; 2021 - FoodProject - <a asp-area="" asp-page="/Privacy">Privacy</a>
-        </div>
-    </footer>
+        &copy; 2021 - FoodProject - <a asp-area="" asp-page="/Privacy">Privacy</a><br>
+        <img src="/Food.png"/>
+    </div>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
