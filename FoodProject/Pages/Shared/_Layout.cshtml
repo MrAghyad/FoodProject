@@ -41,8 +41,9 @@
     </div>
 
     <footer class="border-top footer text-muted">
+        <vc:restaurant-count></vc:restaurant-count>
+        @RenderSection("footer", required: false)
         <div class="container">
-            @RenderSection("footer", required: false)
             &copy; 2021 - FoodProject - <a asp-area="" asp-page="/Privacy">Privacy</a>
         </div>
     </footer>
