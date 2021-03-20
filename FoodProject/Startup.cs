@@ -52,6 +52,7 @@ namespace FoodProject
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            app.UseNodeModules();
 
             app.UseRouting();
 
